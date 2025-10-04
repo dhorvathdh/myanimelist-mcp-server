@@ -2,10 +2,10 @@ import httpx
 from typing import Optional, List, Annotated
 from pydantic import Field, ValidationError
 from mcp.server.fastmcp import FastMCP
-from utils.schemas import *
+from ..utils.schemas import *
 from dotenv import load_dotenv
 import os
-from utils.auth import get_mal_access_token
+from ..utils.auth import get_mal_access_token
 
 load_dotenv()
 
